@@ -2,14 +2,14 @@
 int main()
 {
     int n;
-    int revInteger = 0, remainder, origInteger;
+    int revInteger = 0, origInteger;
     printf("Enter an integer: ");
     scanf("%d", &n);
     origInteger = n;
     // reversed integer is stored in variable 
     while( n!=0 )
     {
-        remainder = n%10;
+        int remainder = n%10;
         revInteger = revInteger*10 + remainder;
         n /= 10;
     }
